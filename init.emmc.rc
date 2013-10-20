@@ -1,5 +1,6 @@
 on emmc-fs
     mount_all ./fstab.u8800
-    setprop ro.crypto.fuse_sdcard true
+    setprop ro.crypto.fuse_sdcard false
 
     mount vfat /dev/block/platform/msm_sdcc.2/by-num/p1 /cust ro
+    mount vfat /dev/block/platform/msm_sdcc.2/by-num/p14 /storage/sdcard1 uid=1000,gid=1015,umask=0002,utf8
