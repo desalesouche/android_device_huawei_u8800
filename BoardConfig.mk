@@ -61,9 +61,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-# Radio class.
-BOARD_RIL_CLASS := ../../../device/huawei/u8800/ril/
-
 # Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HAS_QCOM_WLAN := true
