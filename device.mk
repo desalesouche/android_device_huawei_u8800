@@ -62,9 +62,8 @@ PRODUCT_COPY_FILES += \
 
 # The fstab file
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/fstab.u8800:root/fstab.u8800 \
-	$(LOCAL_PATH)/fstab.sdcard:root/fstab.sdcard \
-	$(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+	$(LOCAL_PATH)/fstab.qcom:root/fstab.qcom \
+	$(LOCAL_PATH)/fstab.sdcard:root/fstab.sdcard
 
 # Configs
 PRODUCT_COPY_FILES += \
@@ -158,8 +157,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.rild.nitz_short_ons_2="" \
 	persist.rild.nitz_short_ons_3="" \
 	ril.subscription.types=NV,RUIM \
-	ro.use_data_netmgrd=true \
-	ro.telephony.ril_class=GBQualcommRIL
+	ro.use_data_netmgrd=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
